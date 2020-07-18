@@ -5,7 +5,7 @@ Home: https://triqs.github.io/cthyb
 
 Package license: GPL-3.0-or-later
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: A fast and generic hybridization-expansion impurity solver
 
