@@ -1,5 +1,5 @@
 boost_cpp:
-- '1.72'
+- 1.72.0
 c_compiler:
 - gcc
 c_compiler_version:
@@ -32,3 +32,6 @@ python:
 - 3.8.* *_cpython
 target_platform:
 - linux-64
+zip_keys:
+- - c_compiler_version
+  - cxx_compiler_version
