@@ -24,6 +24,10 @@ liblapack:
 - 3.8 *netlib
 mpi:
 - openmpi
+mpich:
+- '4'
+openmpi:
+- '4'
 pin_run_as_build:
   boost-cpp:
     max_pin: x.x.x
