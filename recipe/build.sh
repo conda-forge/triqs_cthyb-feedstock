@@ -11,7 +11,7 @@ export OMPI_MCA_btl_vader_single_copy_mechanism=none
 mpiexec="mpiexec --allow-run-as-root"
 
 export CXXFLAGS="$CXXFLAGS -D_LIBCPP_DISABLE_AVAILABILITY"
-source $PREFIX/share/triqsvars.sh
+source $PREFIX/share/triqs/triqsvars.sh
 
 cmake \
     -DCMAKE_INSTALL_PREFIX=$PREFIX \
