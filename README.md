@@ -1,11 +1,11 @@
-About triqs_cthyb
-=================
+About triqs_cthyb-feedstock
+===========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/triqs_cthyb-feedstock/blob/main/LICENSE.txt)
 
 Home: https://triqs.github.io/cthyb
 
 Package license: GPL-3.0-or-later
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/triqs_cthyb-feedstock/blob/main/LICENSE.txt)
 
 Summary: A fast and generic hybridization-expansion impurity solver
 
