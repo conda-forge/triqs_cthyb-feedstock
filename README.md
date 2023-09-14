@@ -268,5 +268,6 @@ Feedstock Maintainers
 =====================
 
 * [@pgunn](https://github.com/pgunn/)
+* [@thoemi09](https://github.com/thoemi09/)
 * [@wentzell](https://github.com/wentzell/)
 

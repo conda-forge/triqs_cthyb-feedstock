@@ -9,7 +9,7 @@ source:
   sha256: 46df2f1b631834b1e30dd426885e75ce0c79a2572077edbc487474235a39cb6b
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win or py<30]
 
 requirements:
@@ -56,3 +56,4 @@ extra:
   recipe-maintainers:
     - wentzell
     - pgunn
+    - thoemi09
