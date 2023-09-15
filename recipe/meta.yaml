@@ -9,31 +9,44 @@ source:
   sha256: 46df2f1b631834b1e30dd426885e75ce0c79a2572077edbc487474235a39cb6b
 
 build:
-  number: 1
+  number: 2
   skip: true  # [win or py<30]
 
 requirements:
   build:
+    - python                                 # [build_platform != target_platform]
+    - cross-python_{{ target_platform }}     # [build_platform != target_platform]
+    - numpy                                  # [build_platform != target_platform]
+    - wget                                   # [target_platform == 'osx-arm64']
+    - libtool                                # [target_platform == 'osx-arm64']
+    - autoconf                               # [target_platform == 'osx-arm64']
+    - automake                               # [target_platform == 'osx-arm64']
+    - llvm-openmp                            # [target_platform == 'osx-arm64']
     - cmake
     - make
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
+    - {{ mpi }}                              # [mpi == 'openmpi' and build_platform != target_platform]
   host:
     - triqs {{ '.'.join(version.split('.')[:2]) }}
     - boost-cpp
-    - nfft
+    - nfft                                   # [target_platform != 'osx-arm64']
+    - fftw                                   # [target_platform == 'osx-arm64']
     - hdf5
     - {{ mpi }}
     - libblas
     - liblapack
+    - numpy
     - python
   run:
     - {{ pin_compatible("triqs", max_pin="x.x") }}
-    - nfft
+    - nfft                                   # [target_platform != 'osx-arm64']
+    - fftw                                   # [target_platform == 'osx-arm64']
     - hdf5
     - {{ mpi }}
     - libblas
     - liblapack
+    - {{ pin_compatible("numpy") }}
     - python
 
 test:
