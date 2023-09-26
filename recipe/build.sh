@@ -9,7 +9,9 @@ if [[ "${CONDA_BUILD_CROSS_COMPILATION:-0}" == "1" ]]; then
   export OPAL_PREFIX="$PREFIX"
 fi
 
+# Build nfft library
 if [[ "$target_platform" == "osx-arm64" ]]; then
+  nfft_install_dir=${BUILD_PREFIX}
   wget https://www-user.tu-chemnitz.de/~potts/nfft/download/nfft-3.5.3.tar.gz
   tar -zxf nfft-3.5.3.tar.gz
   cd nfft-3.5.3
@@ -17,7 +19,14 @@ if [[ "$target_platform" == "osx-arm64" ]]; then
   aclocal
   autoconf
   ./bootstrap.sh
-  ./configure --prefix=$PREFIX --build=$BUILD --host=$HOST --with-fftw3-libdir=${PREFIX}/lib --with-fftw3-includedir=${PREFIX}/include --enable-all --enable-openmp
+  ./configure --prefix=$nfft_install_dir \
+      --build=$BUILD \
+      --host=$HOST \
+      --with-fftw3-libdir=${PREFIX}/lib \
+      --with-fftw3-includedir=${PREFIX}/include \
+      --enable-all \
+      --enable-openmp \
+      --disable-shared
   make
   make install
   cd ..
@@ -38,6 +47,8 @@ cmake ${CMAKE_ARGS} \
     -DCMAKE_C_COMPILER=${BUILD_PREFIX}/bin/$(basename ${CC}) \
     -DCMAKE_INSTALL_PREFIX=$PREFIX \
     -DCMAKE_BUILD_TYPE=Release \
+    -DMeasureG2=ON \
+    -DNFFT3_ROOT=${nfft_install_dir} \
     ..
 
 make -j${CPU_COUNT} VERBOSE=1
@@ -47,3 +58,9 @@ if [[ "${CONDA_BUILD_CROSS_COMPILATION}" != "1" ]]; then
 fi
 
 make install
+
+# Set correct paths in cmake file
+if [[ "$target_platform" == "osx-arm64" ]]; then
+  sed "s|$BUILD_PREFIX|$PREFIX|g" ${PREFIX}/lib/cmake/triqs_cthyb/triqs_cthyb-targets.cmake > tmp_file
+  cp tmp_file ${PREFIX}/lib/cmake/triqs_cthyb/triqs_cthyb-targets.cmake
+fi
