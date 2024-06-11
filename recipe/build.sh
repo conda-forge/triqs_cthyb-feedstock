@@ -32,13 +32,6 @@ if [[ "$target_platform" == "osx-arm64" ]]; then
   cd ..
 fi
 
-# Openmpi Specific environment setup - Cf. https://github.com/conda-forge/libnetcdf-feedstock/pull/80
-export OMPI_MCA_btl=self,tcp
-export OMPI_MCA_plm=isolated
-export OMPI_MCA_rmaps_base_oversubscribe=yes
-export OMPI_MCA_btl_vader_single_copy_mechanism=none
-mpiexec="mpiexec --allow-run-as-root"
-
 export CXXFLAGS="$CXXFLAGS -D_LIBCPP_DISABLE_AVAILABILITY"
 source $PREFIX/share/triqs/triqsvars.sh
 
