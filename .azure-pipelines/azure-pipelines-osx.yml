@@ -12,10 +12,6 @@ jobs:
         CONFIG: osx_arm64_mpimpichnumpy1.22python3.10.____cpython
         UPLOAD_PACKAGES: 'True'
         SHORT_CONFIG: osx_arm64_mpimpichnumpy1.22python3._ha977e349a6
-      osx_arm64_mpimpichnumpy1.22python3.8.____cpython:
-        CONFIG: osx_arm64_mpimpichnumpy1.22python3.8.____cpython
-        UPLOAD_PACKAGES: 'True'
-        SHORT_CONFIG: osx_arm64_mpimpichnumpy1.22python3.8.____cpython
       osx_arm64_mpimpichnumpy1.22python3.9.____cpython:
         CONFIG: osx_arm64_mpimpichnumpy1.22python3.9.____cpython
         UPLOAD_PACKAGES: 'True'
@@ -32,10 +28,6 @@ jobs:
         CONFIG: osx_arm64_mpiopenmpinumpy1.22python3.10.____cpython
         UPLOAD_PACKAGES: 'True'
         SHORT_CONFIG: osx_arm64_mpiopenmpinumpy1.22python_h9c171c2f17
-      osx_arm64_mpiopenmpinumpy1.22python3.8.____cpython:
-        CONFIG: osx_arm64_mpiopenmpinumpy1.22python3.8.____cpython
-        UPLOAD_PACKAGES: 'True'
-        SHORT_CONFIG: osx_arm64_mpiopenmpinumpy1.22python_h9457ad76a2
       osx_arm64_mpiopenmpinumpy1.22python3.9.____cpython:
         CONFIG: osx_arm64_mpiopenmpinumpy1.22python3.9.____cpython
         UPLOAD_PACKAGES: 'True'
