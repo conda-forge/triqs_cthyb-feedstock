@@ -9,8 +9,8 @@ source:
   sha256: 96635f2e2b6016a5f99e372aefc6bd7c5af7ef2ebe26c429bb1b479bc49b67ef
 
 build:
-  number: 3
-  skip: true  # [win or py<30 or (osx and x86_64)]
+  number: 4
+  skip: true  # [win or py<30]
 
 requirements:
   build:
