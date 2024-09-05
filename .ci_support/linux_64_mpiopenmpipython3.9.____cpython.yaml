@@ -27,11 +27,11 @@ libboost_headers:
 liblapack:
 - 3.9 *netlib
 mpi:
-- mpich
+- openmpi
 mpich:
 - '4'
 numpy:
-- '1.22'
+- '2.0'
 openmpi:
 - '5'
 pin_run_as_build:
@@ -39,7 +39,7 @@ pin_run_as_build:
     min_pin: x.x
     max_pin: x.x
 python:
-- 3.10.* *_cpython
+- 3.9.* *_cpython
 target_platform:
 - linux-64
 zip_keys:
