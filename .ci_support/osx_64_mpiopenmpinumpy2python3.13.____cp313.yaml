@@ -11,7 +11,7 @@ c_stdlib:
 c_stdlib_version:
 - '10.13'
 channel_sources:
-- conda-forge/label/python_rc,conda-forge
+- conda-forge
 channel_targets:
 - conda-forge main
 cxx_compiler:
@@ -19,7 +19,7 @@ cxx_compiler:
 cxx_compiler_version:
 - '16'
 hdf5:
-- 1.14.3
+- 1.14.4
 libblas:
 - 3.9 *netlib
 libboost_headers:
@@ -49,4 +49,3 @@ zip_keys:
   - cxx_compiler_version
 - - python
   - numpy
-  - channel_sources

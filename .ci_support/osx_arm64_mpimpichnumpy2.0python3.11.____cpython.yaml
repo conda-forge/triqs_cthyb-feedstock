@@ -21,7 +21,7 @@ cxx_compiler_version:
 fftw:
 - '3'
 hdf5:
-- 1.14.3
+- 1.14.4
 libblas:
 - 3.9 *netlib
 libboost_headers:
@@ -29,7 +29,7 @@ libboost_headers:
 liblapack:
 - 3.9 *netlib
 llvm_openmp:
-- '17'
+- '18'
 macos_machine:
 - arm64-apple-darwin20.0.0
 mpi:
@@ -53,4 +53,3 @@ zip_keys:
   - cxx_compiler_version
 - - python
   - numpy
-  - channel_sources
