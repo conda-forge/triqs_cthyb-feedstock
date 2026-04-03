@@ -18,6 +18,8 @@ cxx_compiler:
 - clangxx
 cxx_compiler_version:
 - '16'
+fftw:
+- '3'
 hdf5:
 - 1.14.6
 libblas:
@@ -26,10 +28,12 @@ libboost_headers:
 - '1.86'
 liblapack:
 - 3.9.* *netlib
+llvm_openmp:
+- '19'
 macos_machine:
-- x86_64-apple-darwin13.4.0
+- arm64-apple-darwin20.0.0
 mpi:
-- openmpi
+- mpich
 mpich:
 - '4'
 numpy:
@@ -41,9 +45,9 @@ pin_run_as_build:
     min_pin: x.x
     max_pin: x.x
 python:
-- 3.12.* *_cpython
+- 3.14.* *_cp314
 target_platform:
-- osx-64
+- osx-arm64
 zip_keys:
 - - c_compiler_version
   - cxx_compiler_version
