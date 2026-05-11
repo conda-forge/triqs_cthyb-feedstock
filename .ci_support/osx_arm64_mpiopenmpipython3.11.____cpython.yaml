@@ -25,7 +25,7 @@ hdf5:
 libblas:
 - 3.9.* *netlib
 libboost_headers:
-- '1.86'
+- '1.88'
 liblapack:
 - 3.9.* *netlib
 llvm_openmp:
@@ -35,7 +35,7 @@ macos_machine:
 mpi:
 - openmpi
 mpich:
-- '4'
+- '5'
 numpy:
 - '2'
 openmpi:
