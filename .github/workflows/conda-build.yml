@@ -22,72 +22,142 @@ jobs:
       max-parallel: 50
       matrix:
         include:
-          - CONFIG: linux_64_mpimpichpython3.10.____cpython
+          - CONFIG: linux_64_hdf51.14.6mpimpichpython3.10.____cpython
             STORE_BUILD_ARTIFACTS: True
-            SHORT_CONFIG: linux_64_mpimpichpython3.10.____cpython
+            SHORT_CONFIG: linux_64_hdf51.14.6mpimpichpython3.10.___hbe83fcec
             UPLOAD_PACKAGES: True
             os: ubuntu
             runs_on: ['ubuntu-latest']
             DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
-          - CONFIG: linux_64_mpimpichpython3.11.____cpython
+          - CONFIG: linux_64_hdf51.14.6mpimpichpython3.11.____cpython
             STORE_BUILD_ARTIFACTS: True
-            SHORT_CONFIG: linux_64_mpimpichpython3.11.____cpython
+            SHORT_CONFIG: linux_64_hdf51.14.6mpimpichpython3.11.___h73d90197
             UPLOAD_PACKAGES: True
             os: ubuntu
             runs_on: ['ubuntu-latest']
             DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
-          - CONFIG: linux_64_mpimpichpython3.12.____cpython
+          - CONFIG: linux_64_hdf51.14.6mpimpichpython3.12.____cpython
             STORE_BUILD_ARTIFACTS: True
-            SHORT_CONFIG: linux_64_mpimpichpython3.12.____cpython
+            SHORT_CONFIG: linux_64_hdf51.14.6mpimpichpython3.12.___hdab1fbbf
             UPLOAD_PACKAGES: True
             os: ubuntu
             runs_on: ['ubuntu-latest']
             DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
-          - CONFIG: linux_64_mpimpichpython3.13.____cp313
+          - CONFIG: linux_64_hdf51.14.6mpimpichpython3.13.____cp313
             STORE_BUILD_ARTIFACTS: True
-            SHORT_CONFIG: linux_64_mpimpichpython3.13.____cp313
+            SHORT_CONFIG: linux_64_hdf51.14.6mpimpichpython3.13.____cp313
             UPLOAD_PACKAGES: True
             os: ubuntu
             runs_on: ['ubuntu-latest']
             DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
-          - CONFIG: linux_64_mpimpichpython3.14.____cp314
+          - CONFIG: linux_64_hdf51.14.6mpimpichpython3.14.____cp314
             STORE_BUILD_ARTIFACTS: True
-            SHORT_CONFIG: linux_64_mpimpichpython3.14.____cp314
+            SHORT_CONFIG: linux_64_hdf51.14.6mpimpichpython3.14.____cp314
             UPLOAD_PACKAGES: True
             os: ubuntu
             runs_on: ['ubuntu-latest']
             DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
-          - CONFIG: linux_64_mpiopenmpipython3.10.____cpython
+          - CONFIG: linux_64_hdf51.14.6mpiopenmpipython3.10.____cpython
             STORE_BUILD_ARTIFACTS: True
-            SHORT_CONFIG: linux_64_mpiopenmpipython3.10.____cpython
+            SHORT_CONFIG: linux_64_hdf51.14.6mpiopenmpipython3.10._h01c5fa92
             UPLOAD_PACKAGES: True
             os: ubuntu
             runs_on: ['ubuntu-latest']
             DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
-          - CONFIG: linux_64_mpiopenmpipython3.11.____cpython
+          - CONFIG: linux_64_hdf51.14.6mpiopenmpipython3.11.____cpython
             STORE_BUILD_ARTIFACTS: True
-            SHORT_CONFIG: linux_64_mpiopenmpipython3.11.____cpython
+            SHORT_CONFIG: linux_64_hdf51.14.6mpiopenmpipython3.11._h10ea981f
             UPLOAD_PACKAGES: True
             os: ubuntu
             runs_on: ['ubuntu-latest']
             DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
-          - CONFIG: linux_64_mpiopenmpipython3.12.____cpython
+          - CONFIG: linux_64_hdf51.14.6mpiopenmpipython3.12.____cpython
             STORE_BUILD_ARTIFACTS: True
-            SHORT_CONFIG: linux_64_mpiopenmpipython3.12.____cpython
+            SHORT_CONFIG: linux_64_hdf51.14.6mpiopenmpipython3.12._h50712666
             UPLOAD_PACKAGES: True
             os: ubuntu
             runs_on: ['ubuntu-latest']
             DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
-          - CONFIG: linux_64_mpiopenmpipython3.13.____cp313
+          - CONFIG: linux_64_hdf51.14.6mpiopenmpipython3.13.____cp313
             STORE_BUILD_ARTIFACTS: True
-            SHORT_CONFIG: linux_64_mpiopenmpipython3.13.____cp313
+            SHORT_CONFIG: linux_64_hdf51.14.6mpiopenmpipython3.13._h96b98b72
             UPLOAD_PACKAGES: True
             os: ubuntu
             runs_on: ['ubuntu-latest']
             DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
-          - CONFIG: linux_64_mpiopenmpipython3.14.____cp314
+          - CONFIG: linux_64_hdf51.14.6mpiopenmpipython3.14.____cp314
             STORE_BUILD_ARTIFACTS: True
-            SHORT_CONFIG: linux_64_mpiopenmpipython3.14.____cp314
+            SHORT_CONFIG: linux_64_hdf51.14.6mpiopenmpipython3.14._h2295454a
+            UPLOAD_PACKAGES: True
+            os: ubuntu
+            runs_on: ['ubuntu-latest']
+            DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
+          - CONFIG: linux_64_hdf52mpimpichpython3.10.____cpython
+            STORE_BUILD_ARTIFACTS: True
+            SHORT_CONFIG: linux_64_hdf52mpimpichpython3.10.____cpython
+            UPLOAD_PACKAGES: True
+            os: ubuntu
+            runs_on: ['ubuntu-latest']
+            DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
+          - CONFIG: linux_64_hdf52mpimpichpython3.11.____cpython
+            STORE_BUILD_ARTIFACTS: True
+            SHORT_CONFIG: linux_64_hdf52mpimpichpython3.11.____cpython
+            UPLOAD_PACKAGES: True
+            os: ubuntu
+            runs_on: ['ubuntu-latest']
+            DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
+          - CONFIG: linux_64_hdf52mpimpichpython3.12.____cpython
+            STORE_BUILD_ARTIFACTS: True
+            SHORT_CONFIG: linux_64_hdf52mpimpichpython3.12.____cpython
+            UPLOAD_PACKAGES: True
+            os: ubuntu
+            runs_on: ['ubuntu-latest']
+            DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
+          - CONFIG: linux_64_hdf52mpimpichpython3.13.____cp313
+            STORE_BUILD_ARTIFACTS: True
+            SHORT_CONFIG: linux_64_hdf52mpimpichpython3.13.____cp313
+            UPLOAD_PACKAGES: True
+            os: ubuntu
+            runs_on: ['ubuntu-latest']
+            DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
+          - CONFIG: linux_64_hdf52mpimpichpython3.14.____cp314
+            STORE_BUILD_ARTIFACTS: True
+            SHORT_CONFIG: linux_64_hdf52mpimpichpython3.14.____cp314
+            UPLOAD_PACKAGES: True
+            os: ubuntu
+            runs_on: ['ubuntu-latest']
+            DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
+          - CONFIG: linux_64_hdf52mpiopenmpipython3.10.____cpython
+            STORE_BUILD_ARTIFACTS: True
+            SHORT_CONFIG: linux_64_hdf52mpiopenmpipython3.10.____cpython
+            UPLOAD_PACKAGES: True
+            os: ubuntu
+            runs_on: ['ubuntu-latest']
+            DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
+          - CONFIG: linux_64_hdf52mpiopenmpipython3.11.____cpython
+            STORE_BUILD_ARTIFACTS: True
+            SHORT_CONFIG: linux_64_hdf52mpiopenmpipython3.11.____cpython
+            UPLOAD_PACKAGES: True
+            os: ubuntu
+            runs_on: ['ubuntu-latest']
+            DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
+          - CONFIG: linux_64_hdf52mpiopenmpipython3.12.____cpython
+            STORE_BUILD_ARTIFACTS: True
+            SHORT_CONFIG: linux_64_hdf52mpiopenmpipython3.12.____cpython
+            UPLOAD_PACKAGES: True
+            os: ubuntu
+            runs_on: ['ubuntu-latest']
+            DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
+          - CONFIG: linux_64_hdf52mpiopenmpipython3.13.____cp313
+            STORE_BUILD_ARTIFACTS: True
+            SHORT_CONFIG: linux_64_hdf52mpiopenmpipython3.13.____cp313
+            UPLOAD_PACKAGES: True
+            os: ubuntu
+            runs_on: ['ubuntu-latest']
+            DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
+          - CONFIG: linux_64_hdf52mpiopenmpipython3.14.____cp314
+            STORE_BUILD_ARTIFACTS: True
+            SHORT_CONFIG: linux_64_hdf52mpiopenmpipython3.14.____cp314
             UPLOAD_PACKAGES: True
             os: ubuntu
             runs_on: ['ubuntu-latest']
