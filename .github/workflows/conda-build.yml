@@ -22,76 +22,206 @@ jobs:
       max-parallel: 50
       matrix:
         include:
-          - CONFIG: linux_64_mpimpichpython3.10.____cpython
+          - CONFIG: linux_64_hdf51.14.6mpimpichpython3.10.____cpython
             STORE_BUILD_ARTIFACTS: True
-            SHORT_CONFIG: linux_64_mpimpichpython3.10.____cpython
+            SHORT_CONFIG: linux_64_hdf51.14.6mpimpichpython3.10.___hbe83fcec
             UPLOAD_PACKAGES: True
             os: ubuntu
             runs_on: ['ubuntu-latest']
             DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
-          - CONFIG: linux_64_mpimpichpython3.11.____cpython
+            tools_install_dir: ~/miniforge3
+            build_workspace_dir: build_artifacts
+            docker_run_args: 
+          - CONFIG: linux_64_hdf51.14.6mpimpichpython3.11.____cpython
             STORE_BUILD_ARTIFACTS: True
-            SHORT_CONFIG: linux_64_mpimpichpython3.11.____cpython
+            SHORT_CONFIG: linux_64_hdf51.14.6mpimpichpython3.11.___h73d90197
             UPLOAD_PACKAGES: True
             os: ubuntu
             runs_on: ['ubuntu-latest']
             DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
-          - CONFIG: linux_64_mpimpichpython3.12.____cpython
+            tools_install_dir: ~/miniforge3
+            build_workspace_dir: build_artifacts
+            docker_run_args: 
+          - CONFIG: linux_64_hdf51.14.6mpimpichpython3.12.____cpython
             STORE_BUILD_ARTIFACTS: True
-            SHORT_CONFIG: linux_64_mpimpichpython3.12.____cpython
+            SHORT_CONFIG: linux_64_hdf51.14.6mpimpichpython3.12.___hdab1fbbf
             UPLOAD_PACKAGES: True
             os: ubuntu
             runs_on: ['ubuntu-latest']
             DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
-          - CONFIG: linux_64_mpimpichpython3.13.____cp313
+            tools_install_dir: ~/miniforge3
+            build_workspace_dir: build_artifacts
+            docker_run_args: 
+          - CONFIG: linux_64_hdf51.14.6mpimpichpython3.13.____cp313
             STORE_BUILD_ARTIFACTS: True
-            SHORT_CONFIG: linux_64_mpimpichpython3.13.____cp313
+            SHORT_CONFIG: linux_64_hdf51.14.6mpimpichpython3.13.____cp313
             UPLOAD_PACKAGES: True
             os: ubuntu
             runs_on: ['ubuntu-latest']
             DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
-          - CONFIG: linux_64_mpimpichpython3.14.____cp314
+            tools_install_dir: ~/miniforge3
+            build_workspace_dir: build_artifacts
+            docker_run_args: 
+          - CONFIG: linux_64_hdf51.14.6mpimpichpython3.14.____cp314
             STORE_BUILD_ARTIFACTS: True
-            SHORT_CONFIG: linux_64_mpimpichpython3.14.____cp314
+            SHORT_CONFIG: linux_64_hdf51.14.6mpimpichpython3.14.____cp314
             UPLOAD_PACKAGES: True
             os: ubuntu
             runs_on: ['ubuntu-latest']
             DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
-          - CONFIG: linux_64_mpiopenmpipython3.10.____cpython
+            tools_install_dir: ~/miniforge3
+            build_workspace_dir: build_artifacts
+            docker_run_args: 
+          - CONFIG: linux_64_hdf51.14.6mpiopenmpipython3.10.____cpython
             STORE_BUILD_ARTIFACTS: True
-            SHORT_CONFIG: linux_64_mpiopenmpipython3.10.____cpython
+            SHORT_CONFIG: linux_64_hdf51.14.6mpiopenmpipython3.10._h01c5fa92
             UPLOAD_PACKAGES: True
             os: ubuntu
             runs_on: ['ubuntu-latest']
             DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
-          - CONFIG: linux_64_mpiopenmpipython3.11.____cpython
+            tools_install_dir: ~/miniforge3
+            build_workspace_dir: build_artifacts
+            docker_run_args: 
+          - CONFIG: linux_64_hdf51.14.6mpiopenmpipython3.11.____cpython
             STORE_BUILD_ARTIFACTS: True
-            SHORT_CONFIG: linux_64_mpiopenmpipython3.11.____cpython
+            SHORT_CONFIG: linux_64_hdf51.14.6mpiopenmpipython3.11._h10ea981f
             UPLOAD_PACKAGES: True
             os: ubuntu
             runs_on: ['ubuntu-latest']
             DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
-          - CONFIG: linux_64_mpiopenmpipython3.12.____cpython
+            tools_install_dir: ~/miniforge3
+            build_workspace_dir: build_artifacts
+            docker_run_args: 
+          - CONFIG: linux_64_hdf51.14.6mpiopenmpipython3.12.____cpython
             STORE_BUILD_ARTIFACTS: True
-            SHORT_CONFIG: linux_64_mpiopenmpipython3.12.____cpython
+            SHORT_CONFIG: linux_64_hdf51.14.6mpiopenmpipython3.12._h50712666
             UPLOAD_PACKAGES: True
             os: ubuntu
             runs_on: ['ubuntu-latest']
             DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
-          - CONFIG: linux_64_mpiopenmpipython3.13.____cp313
+            tools_install_dir: ~/miniforge3
+            build_workspace_dir: build_artifacts
+            docker_run_args: 
+          - CONFIG: linux_64_hdf51.14.6mpiopenmpipython3.13.____cp313
             STORE_BUILD_ARTIFACTS: True
-            SHORT_CONFIG: linux_64_mpiopenmpipython3.13.____cp313
+            SHORT_CONFIG: linux_64_hdf51.14.6mpiopenmpipython3.13._h96b98b72
             UPLOAD_PACKAGES: True
             os: ubuntu
             runs_on: ['ubuntu-latest']
             DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
-          - CONFIG: linux_64_mpiopenmpipython3.14.____cp314
+            tools_install_dir: ~/miniforge3
+            build_workspace_dir: build_artifacts
+            docker_run_args: 
+          - CONFIG: linux_64_hdf51.14.6mpiopenmpipython3.14.____cp314
             STORE_BUILD_ARTIFACTS: True
-            SHORT_CONFIG: linux_64_mpiopenmpipython3.14.____cp314
+            SHORT_CONFIG: linux_64_hdf51.14.6mpiopenmpipython3.14._h2295454a
             UPLOAD_PACKAGES: True
             os: ubuntu
             runs_on: ['ubuntu-latest']
             DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
+            tools_install_dir: ~/miniforge3
+            build_workspace_dir: build_artifacts
+            docker_run_args: 
+          - CONFIG: linux_64_hdf52mpimpichpython3.10.____cpython
+            STORE_BUILD_ARTIFACTS: True
+            SHORT_CONFIG: linux_64_hdf52mpimpichpython3.10.____cpython
+            UPLOAD_PACKAGES: True
+            os: ubuntu
+            runs_on: ['ubuntu-latest']
+            DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
+            tools_install_dir: ~/miniforge3
+            build_workspace_dir: build_artifacts
+            docker_run_args: 
+          - CONFIG: linux_64_hdf52mpimpichpython3.11.____cpython
+            STORE_BUILD_ARTIFACTS: True
+            SHORT_CONFIG: linux_64_hdf52mpimpichpython3.11.____cpython
+            UPLOAD_PACKAGES: True
+            os: ubuntu
+            runs_on: ['ubuntu-latest']
+            DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
+            tools_install_dir: ~/miniforge3
+            build_workspace_dir: build_artifacts
+            docker_run_args: 
+          - CONFIG: linux_64_hdf52mpimpichpython3.12.____cpython
+            STORE_BUILD_ARTIFACTS: True
+            SHORT_CONFIG: linux_64_hdf52mpimpichpython3.12.____cpython
+            UPLOAD_PACKAGES: True
+            os: ubuntu
+            runs_on: ['ubuntu-latest']
+            DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
+            tools_install_dir: ~/miniforge3
+            build_workspace_dir: build_artifacts
+            docker_run_args: 
+          - CONFIG: linux_64_hdf52mpimpichpython3.13.____cp313
+            STORE_BUILD_ARTIFACTS: True
+            SHORT_CONFIG: linux_64_hdf52mpimpichpython3.13.____cp313
+            UPLOAD_PACKAGES: True
+            os: ubuntu
+            runs_on: ['ubuntu-latest']
+            DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
+            tools_install_dir: ~/miniforge3
+            build_workspace_dir: build_artifacts
+            docker_run_args: 
+          - CONFIG: linux_64_hdf52mpimpichpython3.14.____cp314
+            STORE_BUILD_ARTIFACTS: True
+            SHORT_CONFIG: linux_64_hdf52mpimpichpython3.14.____cp314
+            UPLOAD_PACKAGES: True
+            os: ubuntu
+            runs_on: ['ubuntu-latest']
+            DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
+            tools_install_dir: ~/miniforge3
+            build_workspace_dir: build_artifacts
+            docker_run_args: 
+          - CONFIG: linux_64_hdf52mpiopenmpipython3.10.____cpython
+            STORE_BUILD_ARTIFACTS: True
+            SHORT_CONFIG: linux_64_hdf52mpiopenmpipython3.10.____cpython
+            UPLOAD_PACKAGES: True
+            os: ubuntu
+            runs_on: ['ubuntu-latest']
+            DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
+            tools_install_dir: ~/miniforge3
+            build_workspace_dir: build_artifacts
+            docker_run_args: 
+          - CONFIG: linux_64_hdf52mpiopenmpipython3.11.____cpython
+            STORE_BUILD_ARTIFACTS: True
+            SHORT_CONFIG: linux_64_hdf52mpiopenmpipython3.11.____cpython
+            UPLOAD_PACKAGES: True
+            os: ubuntu
+            runs_on: ['ubuntu-latest']
+            DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
+            tools_install_dir: ~/miniforge3
+            build_workspace_dir: build_artifacts
+            docker_run_args: 
+          - CONFIG: linux_64_hdf52mpiopenmpipython3.12.____cpython
+            STORE_BUILD_ARTIFACTS: True
+            SHORT_CONFIG: linux_64_hdf52mpiopenmpipython3.12.____cpython
+            UPLOAD_PACKAGES: True
+            os: ubuntu
+            runs_on: ['ubuntu-latest']
+            DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
+            tools_install_dir: ~/miniforge3
+            build_workspace_dir: build_artifacts
+            docker_run_args: 
+          - CONFIG: linux_64_hdf52mpiopenmpipython3.13.____cp313
+            STORE_BUILD_ARTIFACTS: True
+            SHORT_CONFIG: linux_64_hdf52mpiopenmpipython3.13.____cp313
+            UPLOAD_PACKAGES: True
+            os: ubuntu
+            runs_on: ['ubuntu-latest']
+            DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
+            tools_install_dir: ~/miniforge3
+            build_workspace_dir: build_artifacts
+            docker_run_args: 
+          - CONFIG: linux_64_hdf52mpiopenmpipython3.14.____cp314
+            STORE_BUILD_ARTIFACTS: True
+            SHORT_CONFIG: linux_64_hdf52mpiopenmpipython3.14.____cp314
+            UPLOAD_PACKAGES: True
+            os: ubuntu
+            runs_on: ['ubuntu-latest']
+            DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
+            tools_install_dir: ~/miniforge3
+            build_workspace_dir: build_artifacts
+            docker_run_args: 
     steps:
 
     - name: Checkout code
@@ -101,11 +231,13 @@ jobs:
       id: build-linux
       if: matrix.os == 'ubuntu'
       env:
+        MINIFORGE_HOME: ${{ matrix.tools_install_dir }}
+        CONDA_BLD_PATH: ${{ matrix.build_workspace_dir }}
         CONFIG: ${{ matrix.CONFIG }}
         UPLOAD_PACKAGES: ${{ matrix.UPLOAD_PACKAGES }}
         DOCKER_IMAGE: ${{ matrix.DOCKER_IMAGE }}
         CI: github_actions
-        CONDA_FORGE_DOCKER_RUN_ARGS: "${{ matrix.CONDA_FORGE_DOCKER_RUN_ARGS }}"
+        CONDA_FORGE_DOCKER_RUN_ARGS: "${{ matrix.docker_run_args }}"
         BINSTAR_TOKEN: ${{ secrets.BINSTAR_TOKEN }}
         FEEDSTOCK_TOKEN: ${{ secrets.FEEDSTOCK_TOKEN }}
         STAGING_BINSTAR_TOKEN: ${{ secrets.STAGING_BINSTAR_TOKEN }}
@@ -125,6 +257,8 @@ jobs:
         else
           export IS_PR_BUILD="False"
         fi
+        export MINIFORGE_HOME="${MINIFORGE_HOME/#~/${HOME}}"
+        export CONDA_BLD_PATH="${CONDA_BLD_PATH/#~/${HOME}}"
         echo "::endgroup::"
         ./.scripts/run_docker_build.sh
 
@@ -132,6 +266,8 @@ jobs:
       id: build-macos
       if: matrix.os == 'macos'
       env:
+        MINIFORGE_HOME: ${{ matrix.tools_install_dir }}
+        CONDA_BLD_PATH: ${{ matrix.build_workspace_dir }}
         CONFIG: ${{ matrix.CONFIG }}
         UPLOAD_PACKAGES: ${{ matrix.UPLOAD_PACKAGES }}
         CI: github_actions
@@ -150,6 +286,8 @@ jobs:
         else
           export IS_PR_BUILD="False"
         fi
+        export MINIFORGE_HOME="${MINIFORGE_HOME/#~/${HOME}}"
+        export CONDA_BLD_PATH="${CONDA_BLD_PATH/#~/${HOME}}"
         ./.scripts/run_osx_build.sh
 
     - name: Build on windows
@@ -162,10 +300,8 @@ jobs:
         set "sha=%GITHUB_SHA%"
         call ".scripts\run_win_build.bat"
       env:
-        # default value; make it explicit, as it needs to match with artefact
-        # generation below. Not configurable for now, can be revisited later
-        CONDA_BLD_PATH: C:\bld
-        MINIFORGE_HOME: ${{ contains(runner.arch, 'ARM') && 'C' || 'D' }}:\Miniforge
+        MINIFORGE_HOME: ${{ matrix.tools_install_dir }}
+        CONDA_BLD_PATH: ${{ matrix.build_workspace_dir }}
         PYTHONUNBUFFERED: 1
         CONFIG: ${{ matrix.CONFIG }}
         CI: github_actions
@@ -203,23 +339,18 @@ jobs:
       # we do not want to trigger artefact creation if the build was cancelled
       if: ${{ always() && steps.determine-status.outputs.status != 'cancelled' && matrix.STORE_BUILD_ARTIFACTS }}
       env:
+        CONDA_BLD_PATH: ${{ matrix.build_workspace_dir }}
         CI: github_actions
         CONFIG: ${{ matrix.CONFIG }}
         SHORT_CONFIG: ${{ matrix.SHORT_CONFIG }}
         JOB_STATUS: ${{ steps.determine-status.outputs.status }}
         OS: ${{ matrix.os }}
       run: |
+        export MINIFORGE_HOME="${MINIFORGE_HOME/#~/${HOME}}"
+        export CONDA_BLD_PATH="${CONDA_BLD_PATH/#~/${HOME}}"
         export CI_RUN_ID=$GITHUB_RUN_ID
         export FEEDSTOCK_NAME="$(basename $GITHUB_REPOSITORY)"
         export ARTIFACT_STAGING_DIR="$GITHUB_WORKSPACE"
-        if [ $OS == "macos" ]; then
-          export CONDA_BLD_PATH="${MINIFORGE_HOME:-${HOME}/miniforge3}/conda-bld"
-        elif [ $OS == "windows" ]; then
-          # this needs to be consistent with build step, see above
-          export CONDA_BLD_PATH="C:\\bld"
-        else
-          export CONDA_BLD_PATH="build_artifacts"
-        fi
         # Archive everything in CONDA_BLD_PATH except environments
         # Archive the CONDA_BLD_PATH environments only when the job fails
         # Use different prefix for successful and failed build artifacts
