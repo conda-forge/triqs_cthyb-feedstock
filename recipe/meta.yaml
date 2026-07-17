@@ -1,4 +1,4 @@
-{% set version = "3.3.0" %}
+{% set version = "4.0.0" %}
 
 package:
   name: triqs_cthyb
@@ -6,10 +6,10 @@ package:
 
 source:
   url: https://github.com/TRIQS/cthyb/releases/download/{{ version }}/cthyb-{{ version }}.tar.gz
-  sha256: 96635f2e2b6016a5f99e372aefc6bd7c5af7ef2ebe26c429bb1b479bc49b67ef
+  sha256: eb88948035f616f5db426fc4503870568f877dc2b7cf82070d72836d575d5711
 
 build:
-  number: 11
+  number: 0
   skip: true  # [win or py<30]
 
 requirements:
