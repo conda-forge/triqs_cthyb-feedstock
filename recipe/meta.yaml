@@ -11,17 +11,16 @@ source:
 build:
   number: 0
   skip: true  # [win or py<30]
+  # Boost is header-only here; libboost-devel provides BoostConfig.cmake for
+  # find_package(Boost) under CMP0167, but its compiled-lib run_export is not needed.
+  ignore_run_exports:
+    - libboost
 
 requirements:
   build:
     - python                                 # [build_platform != target_platform]
     - cross-python_{{ target_platform }}     # [build_platform != target_platform]
     - numpy                                  # [build_platform != target_platform]
-    - wget                                   # [target_platform == 'osx-arm64']
-    - libtool                                # [target_platform == 'osx-arm64']
-    - autoconf                               # [target_platform == 'osx-arm64']
-    - automake                               # [target_platform == 'osx-arm64']
-    - llvm-openmp                            # [target_platform == 'osx-arm64']
     - cmake
     - make
     - {{ compiler('c') }}
@@ -30,9 +29,8 @@ requirements:
     - {{ mpi }}                              # [mpi == 'openmpi' and build_platform != target_platform]
   host:
     - triqs {{ '.'.join(version.split('.')[:2]) }}
-    - libboost-headers
-    - nfft                                   # [target_platform != 'osx-arm64']
-    - fftw                                   # [target_platform == 'osx-arm64']
+    - libboost-devel
+    - nfft
     - hdf5
     - {{ mpi }}
     - libblas
@@ -41,8 +39,7 @@ requirements:
     - python
   run:
     - {{ pin_compatible("triqs", max_pin="x.x") }}
-    - nfft                                   # [target_platform != 'osx-arm64']
-    - fftw                                   # [target_platform == 'osx-arm64']
+    - nfft
     - hdf5
     - {{ mpi }}
     - libblas
