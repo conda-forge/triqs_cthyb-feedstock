@@ -5,7 +5,7 @@ MACOSX_SDK_VERSION:
 c_compiler:
 - clang
 c_compiler_version:
-- '16'
+- '19'
 c_stdlib:
 - macosx_deployment_target
 c_stdlib_version:
@@ -17,12 +17,12 @@ channel_targets:
 cxx_compiler:
 - clangxx
 cxx_compiler_version:
-- '16'
+- '19'
 hdf5:
 - '2'
 libblas:
 - 3.9.* *netlib
-libboost_headers:
+libboost_devel:
 - '1.90'
 liblapack:
 - 3.9.* *netlib
